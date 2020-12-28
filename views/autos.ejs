@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1><%= titulo %> </h1>
+        <h2><%= subtitulo %> </h2>
+        <br>
+    </header>
+    <main>
+        <h3><%= cantidad %> </h3>
+        <hr>
+    <% autos.forEach(auto => {%> 
+        <p> Marca: <%= auto.marca %> </p>
+        <p> Modelo: <%= auto.modelo %> </p>
+        <p> Año: <%= auto.anio %> </p>
+        <p> Color: <%= auto.color %> </p>
+        <hr>
+    <%}); %> 
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DH Motors</title>
+</head>
+<body>
+    <header>
+        <h1><%= titulo %> </h1> <br>
+        <h2><%= subtitulo %> </h2>
+    </header>
+    <main>
+        <h4><%= direccion %> </h4>
+        <h4><%= telefono %> </h4>
+        <h4><%= cantidad %> </h4>
+        <hr>
+        <% autos.forEach(auto => { %>
+            <h4>Marca: <%= auto.marca %></h4>
+            <p>Modelo: <%= auto.modelo %> </p>
+            <p>Año: <%= auto.anio %> </p>
+            <hr>
+          <% }) %>
+    </main>
+</body>
+</html>
